@@ -20,19 +20,17 @@
             <tr>
                 <th scope="col">STT</th>
                 <th scope="col">Tên</th>
-                <th scope="col">Email</th>
-                <th scope="col">Điện thoại</th>
+                <th scope="col">UserName</th>
                 <th scope="col">Action</th>
             </tr>
             </thead>
             <tbody>
-            @foreach($customer as $customer)
+            @foreach($users as $key => $user)
             <tr>
-                <th scope="row">{{$customer['id']}}</th>
-                <td>{{$customer['name']}}</td>
-                <td>{{$customer['email']}}</td>
-                <td>{{$customer['phone']}}</td>
-                <td><a class="btn btn-info" href="{{route('customer.edit',['id'=>$customer['id']])}}">Sua</a> <a class="btn btn-info" href="">Xoa</a></td>
+                <th scope="row">{{++$key}}</th>
+                <td>{{$user->username}}</td>
+                <td>{{$user->name}}</td>
+                <td><a class="btn btn-info" href="{{route('customer.edit',['id'=>$user->id])}}">Sua</a> <a class="btn btn-info" href="">Xoa</a></td>
             </tr>
             @endforeach
 

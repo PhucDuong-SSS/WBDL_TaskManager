@@ -18,16 +18,16 @@
             <form method="post" action="{{route('customer.store')}}" >
                 @csrf
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Name</label>
+                    <label for="exampleInputEmail1">User Name</label>
+                    <input type="text" class="form-control" name="username">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Name</label>
                     <input type="text" class="form-control" name="name">
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword1">Email</label>
-                    <input type="email" class="form-control" name="email">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Phone</label>
-                    <input type="text" class="form-control" name="phone" >
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" name="password" >
                 </div>
 
                 <button type="submit" class="btn btn-primary">Submit</button>

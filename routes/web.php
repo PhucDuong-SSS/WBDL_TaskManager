@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CustomerController;
-
+use App\Http\Controllers\AuthController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,8 +14,10 @@ use App\Http\Controllers\CustomerController;
 |
 */
 
+Route::get('login',[AuthController::class, 'showFormLogin'])->name('login');
+Route::post('login',[AuthController::class, 'login'])->name('auth.login');
 
-Route::prefix('customer')->group(function (){
+ Route::middleware(['auth','checkActiveAccount'])->prefix('customer')->group(function (){
     Route::get('/',[CustomerController::class, 'index'])->name('customer.index');
     Route::get('/create', [CustomerController::class, 'create'])->name('customer.create');
 

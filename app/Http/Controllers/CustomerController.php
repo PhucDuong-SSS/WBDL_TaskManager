@@ -1,35 +1,24 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
+use App\Http\Services\UserService;
+use App\Models\User;
+use Illuminate\Support\Facades\Hash;
 
 class CustomerController extends Controller
 {
-    public function  index()
+    protected $userService;
+    public function __construct(UserService $userService)
     {
-        $customer = [
-            [
-                'id' => 1,
-                'name'=>'phuc',
-                'email'=>'phuc@gmail.com',
-                'phone'=>'01234568'
+        $this->userService = $userService;
+    }
 
-            ],
-            [
-                'id' => 2,
-                'name'=>'ngoc',
-                'email'=>'duong@gmail.com',
-                'phone'=>'01234568'
-            ],
-            [
-                'id' => '3',
-                'name'=>'duong',
-                'email'=>'phungocc@gmail.com',
-                'phone'=>'01234568'
-            ],
-        ];
-        return view('modules.customer.index',compact('customer'));
+    public function index()
+    {
+        $users = $this->userService->getAll();
+
+        return view('modules.customer.index',compact('users'));
     }
 
 
@@ -52,7 +41,8 @@ class CustomerController extends Controller
 
     public function store(Request $request)
     {
-        dd($request->all());
+        $this->userService->create($request);
+        return redirect()->route('customer.index');
 
     }
 
