@@ -13,6 +13,11 @@ use App\Http\Controllers\AuthController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::view('/', 'modules.master');
+Route::view('/dashboard', 'modules.customer.dashboard');
+Route::view('/create', 'modules.customer.create');
+
+
 
 Route::get('login',[AuthController::class, 'showFormLogin'])->name('login');
 Route::post('login',[AuthController::class, 'login'])->name('auth.login');

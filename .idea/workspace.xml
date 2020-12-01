@@ -2,18 +2,362 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c03f317c-4056-485f-aa0e-dfc6cd8b6d6d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/StatusConst.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Repositories/UserRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Services/UserService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/modules/customer/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/brand/coreui-pro.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/favicon/android-icon-144x144.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/favicon/android-icon-192x192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/favicon/android-icon-36x36.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/favicon/android-icon-48x48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/favicon/android-icon-72x72.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/favicon/android-icon-96x96.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/favicon/apple-icon-114x114.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/favicon/apple-icon-120x120.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/favicon/apple-icon-144x144.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/favicon/apple-icon-152x152.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/favicon/apple-icon-180x180.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/favicon/apple-icon-57x57.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/favicon/apple-icon-60x60.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/favicon/apple-icon-72x72.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/favicon/apple-icon-76x76.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/favicon/apple-icon-precomposed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/favicon/apple-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/favicon/browserconfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/favicon/favicon-16x16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/favicon/favicon-32x32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/favicon/favicon-96x96.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/favicon/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/favicon/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/favicon/ms-icon-144x144.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/favicon/ms-icon-150x150.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/favicon/ms-icon-310x310.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/favicon/ms-icon-70x70.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/avatars/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/avatars/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/avatars/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/avatars/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/avatars/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/avatars/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/avatars/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/avatars/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/style.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/style.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/style.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/advanced-forms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/advanced-forms.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/calendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/calendar.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/charts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/charts.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/code-editor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/code-editor.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/colors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/colors.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/datatables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/datatables.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/draggable-cards.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/draggable-cards.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/google-maps.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/google-maps.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/ladda-buttons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/ladda-buttons.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/loading-buttons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/loading-buttons.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/main.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/markdown-editor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/markdown-editor.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/multi-select.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/multi-select.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/popovers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/popovers.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/sliders.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/sliders.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/text-editor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/text-editor.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/toastr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/toastr.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/toasts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/toasts.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/tooltips.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/tooltips.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/validation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/validation.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/widgets.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/widgets.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/chartjs/css/coreui-chartjs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/chartjs/css/coreui-chartjs.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/chartjs/js/coreui-chartjs.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/chartjs/js/coreui-chartjs.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/coreui-pro/js/coreui.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/coreui-pro/js/coreui.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/css/brand.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/css/brand.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/css/flag.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/css/flag.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/css/free.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/css/free.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/fonts/CoreUI-Icons-Brand.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/fonts/CoreUI-Icons-Brand.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/fonts/CoreUI-Icons-Brand.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/fonts/CoreUI-Icons-Brand.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/fonts/CoreUI-Icons-Free.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/fonts/CoreUI-Icons-Free.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/fonts/CoreUI-Icons-Free.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/fonts/CoreUI-Icons-Free.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/js/svgxuse.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/brand.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-AD.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-AE.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-AF.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-AG.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-AL.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-AM.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-AO.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-AR.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-AT.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-AU.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-AZ.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-BA.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-BB.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-BD.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-BE.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-BF.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-BG.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-BH.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-BI.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-BJ.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-BN.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-BO.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-BR.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-BS.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-BT.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-BW.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-BY.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-BZ.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-CA.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-CD.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-CF.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-CG.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-CH.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-CI.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-CK.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-CL.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-CM.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-CN.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-CO.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-CR.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-CU.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-CV.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-CY.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-CZ.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-DE.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-DJ.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-DK.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-DM.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-DO.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-DZ.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-EC.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-EE.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-EG.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-ER.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-ES.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-ET.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-FI.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-FJ.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-FM.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-FR.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-GA.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-GB.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-GD.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-GE.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-GH.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-GM.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-GN.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-GQ.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-GR.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-GT.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-GW.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-GY.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-HK.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-HN.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-HR.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-HT.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-HU.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-ID.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-IE.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-IL.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-IN.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-IQ.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-IR.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-IS.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-IT.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-JM.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-JO.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-JP.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-KE.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-KG.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-KH.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-KI.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-KM.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-KN.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-KP.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-KR.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-KW.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-KZ.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-LA.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-LB.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-LC.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-LI.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-LK.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-LR.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-LS.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-LT.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-LU.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-LV.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-LY.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-MA.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-MC.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-MD.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-ME.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-MG.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-MH.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-MK.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-ML.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-MM.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-MN.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-MR.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-MT.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-MU.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-MV.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-MW.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-MX.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-MY.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-MZ.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-NA.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-NE.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-NG.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-NI.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-NL.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-NO.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-NP.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-NR.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-NU.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-NZ.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-OM.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-PA.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-PE.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-PG.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-PH.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-PK.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-PL.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-PT.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-PW.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-PY.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-QA.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-RO.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-RS.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-RU.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-RW.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-SA.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-SB.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-SC.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-SD.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-SE.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-SG.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-SI.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-SK.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-SL.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-SM.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-SN.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-SO.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-SR.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-SS.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-ST.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-SV.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-SY.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-SZ.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-TD.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-TG.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-TH.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-TJ.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-TL.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-TM.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-TN.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-TO.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-TR.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-TT.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-TV.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-TW.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-TZ.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-UA.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-UG.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-US.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-UY.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-UZ.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-VA.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-VC.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-VE.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-VG.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-VN.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-WS.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-XK.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-YE.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-ZA.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-ZM.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/flag/cif-ZW.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/icons/svg/free.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@coreui/utils/js/coreui-utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@fullcalendar/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@fullcalendar/css/main.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@fullcalendar/css/main.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/@fullcalendar/css/main.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/bootstrap-daterangepicker/css/daterangepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/bootstrap-daterangepicker/css/daterangepicker.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/bootstrap-daterangepicker/css/daterangepicker.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/bootstrap-daterangepicker/css/daterangepicker.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/bootstrap-daterangepicker/js/daterangepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/codemirror/css/codemirror.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/codemirror/js/codemirror.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/codemirror/js/markdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/codemirror/js/xml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/datatables.net-bs4/css/dataTables.bootstrap4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/datatables.net-bs4/js/dataTables.bootstrap4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/datatables.net/js/jquery.dataTables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/fullcalendar/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/fullcalendar/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/jquery-ui-dist/js/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/jquery-validation/js/jquery.validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/jquery.maskedinput/js/jquery.maskedinput.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/jquery/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/jquery/js/jquery.slim.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/ladda/css/ladda-themeless.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/ladda/js/ladda.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/ladda/js/spin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/moment/js/moment.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/quill/css/quill.coreui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/quill/css/quill.coreui.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/quill/css/quill.coreui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/quill/css/quill.coreui.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/quill/js/quill.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/quill/js/quill.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/select2/css/select2-coreui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/select2/css/select2-coreui.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/select2/css/select2-coreui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/select2/css/select2-coreui.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/select2/css/select2.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/select2/js/select2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/toastr/css/toastr.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/toastr/css/toastr.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/toastr/css/toastr.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/toastr/css/toastr.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/toastr/js/toastr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/modules/core/footer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/modules/core/menu_left.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/modules/customer/dashboard.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/modules/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/modules/master.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/modules/customer/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/modules/customer/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/modules/customer/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/modules/customer/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
@@ -147,12 +491,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/views/modules/customer" />
       <recent name="$PROJECT_DIR$/resources/views" />
@@ -180,7 +527,10 @@
       <workItem from="1606374882306" duration="943000" />
       <workItem from="1606375918919" duration="5737000" />
       <workItem from="1606443458540" duration="438000" />
-      <workItem from="1606632539765" duration="21044000" />
+      <workItem from="1606632539765" duration="21877000" />
+      <workItem from="1606701970707" duration="843000" />
+      <workItem from="1606711770565" duration="1845000" />
+      <workItem from="1606718252557" duration="9049000" />
     </task>
     <servers />
   </component>
@@ -188,14 +538,18 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="502" y="155" width="424" height="491" key="FileChooserDialogImpl" timestamp="1606443896317">
+    <state x="404" y="189" width="620" height="423" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606712005969">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state x="502" y="155" width="424" height="491" key="FileChooserDialogImpl/72.27.1294.741@72.27.1294.741" timestamp="1606443896317" />
-    <state x="704" y="280" width="399" height="164" key="NewPhpFileDialog" timestamp="1606654440910">
+    <state x="404" y="189" width="620" height="423" key="#com.intellij.fileTypes.FileTypeChooser/72.27.1294.741@72.27.1294.741" timestamp="1606712005969" />
+    <state x="502" y="155" width="424" height="491" key="FileChooserDialogImpl" timestamp="1606702907195">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state x="704" y="280" width="399" height="164" key="NewPhpFileDialog/72.27.1294.741@72.27.1294.741" timestamp="1606654440910" />
+    <state x="502" y="155" width="424" height="491" key="FileChooserDialogImpl/72.27.1294.741@72.27.1294.741" timestamp="1606702907195" />
+    <state x="704" y="280" width="399" height="164" key="NewPhpFileDialog" timestamp="1606719800566">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state x="704" y="280" width="399" height="164" key="NewPhpFileDialog/72.27.1294.741@72.27.1294.741" timestamp="1606719800566" />
     <state x="208" y="31" width="1022" height="737" key="SettingsEditor" timestamp="1606632711364">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
@@ -208,5 +562,16 @@
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="382" y="89" width="672" height="678" key="search.everywhere.popup/72.27.1294.741@72.27.1294.741" timestamp="1606364684309" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/modules/master.blade.php</url>
+          <line>9</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
