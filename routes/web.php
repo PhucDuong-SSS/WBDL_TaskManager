@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,5 +36,10 @@ Route::get('logout',[AuthController::class, 'logout'])->name('auth.logout');
     Route::get('{id}/edit',[CustomerController::class, 'edit'])->name('customer.edit');
     Route::post('{id}/update',[CustomerController::class, 'update'])->name('customer.update');
     Route::get('{id}/delete', [CustomerController::class , 'delete'])->name('customer.delete');
+    Route::post('search', [CustomerController::class , 'search'])->name('customer.search');
 
+});
+Route::middleware(['auth','checkActiveAccount'])->prefix('category')->group(function(){
+    Route::get('/',[CategoryController::class,'index'])->name('category.index');
+    Route::get('{id}/posts',[CategoryController::class, 'getPostsByCategoryId'])->name('category.getPostsByCategoryId');
 });

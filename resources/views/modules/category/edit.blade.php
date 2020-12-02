@@ -9,44 +9,28 @@
                             <div class="card">
                                 <div class="card-header"><strong>Insert New Customerr</strong></div>
                                 <div class="card-body">
-                                    <form class="form-horizontal" action="{{route('customer.store')}}" method="post">
+                                    <form class="form-horizontal" action="{{route('customer.update',['id'=>$user->id])}}" method="post">
                                         @csrf
                                         <div class="form-group row">
                                             <label class="col-md-3 col-form-label" for="hf-name">Name</label>
                                             <div class="col-md-9">
-                                                <input class="form-control" id="hf-name" type="text" name="name" placeholder="Enter your name" autocomplete="email">
+                                                <input class="form-control" id="hf-name" type="text" value="{{$user->name}}" name="name" placeholder="Enter your name" autocomplete="email">
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-md-3 col-form-label" for="hf-username">User Name</label>
                                             <div class="col-md-9">
-                                                <input class="form-control" id="hf-username" type="text" name="username" placeholder="Enter your username" >
+                                                <input class="form-control" id="hf-username" type="text" value="{{$user->username}}" name="username" placeholder="Enter your username" >
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-md-3 col-form-label" for="hf-email">Email</label>
                                             <div class="col-md-9">
-                                                <input class="form-control" id="hf-email" type="text" name="email" placeholder="Enter your email" >
+                                                <input class="form-control" id="hf-email" type="text" value="{{$user->email}}" name="email" placeholder="Enter your email" >
                                             </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Role</label>
-                                            @foreach($roles as $role)
-                                                <div class="form-check">
-                                                    <input name="roles[{{ $role->id }}]" class="form-check-input" type="checkbox" value="{{ $role->id }}">
-                                                    <label class="form-check-label">
-                                                        {{ $role->name }}
-                                                    </label>
-                                                </div>
-                                            @endforeach
                                         </div>
 
-                                        <div class="form-group row">
-                                            <label class="col-md-3 col-form-label" for="hf-password">Password</label>
-                                            <div class="col-md-9">
-                                                <input class="form-control" id="hf-password" type="password" name="password" placeholder="Enter Password.." autocomplete="current-password">
-                                            </div>
-                                        </div>
+
                                         <div class="card-footer">
                                             <button class="btn btn-sm btn-primary" type="submit"> Submit</button>
                                             <a href="{{route('customer.index')}}"><button class="btn btn-sm btn-primary" type="button"> Back</button></a>

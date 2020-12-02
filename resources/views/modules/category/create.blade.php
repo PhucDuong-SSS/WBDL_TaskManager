@@ -29,17 +29,6 @@
                                                 <input class="form-control" id="hf-email" type="text" name="email" placeholder="Enter your email" >
                                             </div>
                                         </div>
-                                        <div class="form-group">
-                                            <label>Role</label>
-                                            @foreach($roles as $role)
-                                                <div class="form-check">
-                                                    <input name="roles[{{ $role->id }}]" class="form-check-input" type="checkbox" value="{{ $role->id }}">
-                                                    <label class="form-check-label">
-                                                        {{ $role->name }}
-                                                    </label>
-                                                </div>
-                                            @endforeach
-                                        </div>
 
                                         <div class="form-group row">
                                             <label class="col-md-3 col-form-label" for="hf-password">Password</label>

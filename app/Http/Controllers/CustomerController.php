@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use App\Http\Services\UserService;
 use App\Models\User;
 use Illuminate\Support\Facades\Session;
+use App\Models\Role;
 
 
 class CustomerController extends Controller
@@ -25,7 +26,8 @@ class CustomerController extends Controller
 
     public function create()
     {
-        return view('modules.customer.create');
+        $roles = Role::all();
+        return view('modules.customer.create',compact('roles'));
     }
 
     public function show($id)
@@ -65,5 +67,9 @@ class CustomerController extends Controller
         $this->userService->delete($user);
         return redirect()->route('customer.index');
 
+    }
+    public function search(Request $request){
+        $result = $this->userService->search($request);
+        return view('modules.customer.search',compact('result'));
     }
 }

@@ -5,7 +5,7 @@
             <div class="container-fluid">
                 <div class="fade-in">
                     <div class="card">
-                        <div class="card-header"> <strong>Customer List</strong>
+                        <div class="card-header"> <strong>Categogy List</strong>
                             <div class="card-header-actions">
                                 <form class="form-inline d-flex justify-content-center md-form form-sm" method="post" action="{{route('customer.search')}}" >
                                     @csrf
@@ -19,7 +19,7 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <table class="table table-striped table-bordered datatable">
+                            <table class="table table-striped table-bordered ">
                                 @if (Session::has('success'))
                                     <p class="text-success">
                                         <i class="fa fa-check" aria-hidden="true"></i>{{ Session::get('success') }}
@@ -29,28 +29,26 @@
                                 <tr>
                                     <th>No</th>
                                     <th>Name</th>
-                                    <th>User Name</th>
-                                    <th>Status</th>
+                                    <th>Total Post</th>
                                     <th>Actions</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                @if(count($users) ==0)
+                                @if(count($categories) ==0)
                                     <td colspan="5">No data to show</td>
                                 @else
-                                    @foreach($users as $key=> $user)
+                                    @foreach($categories as $key=> $category)
                                 <tr>
                                     <td>{{++$key}}</td>
-                                    <td>{{$user->name}}</td>
-                                    <td>{{$user->username}}</td>
-                                    <td><span class="badge {{$user->status ==\App\Http\Controllers\StatusConst::ACTIVE?'badge-success':'badge-dark'}}">{{$user->status ==\App\Http\Controllers\StatusConst::ACTIVE?'Active':'Inactive'}}</span></td>
-                                    <td><a class="btn btn-success" href="#">
+                                    <td>{{$category->name}}</td>
+                                    <td>{{$category->posts()->count()}}</td>
+                                    <td><a class="btn btn-success" href="{{route('category.getPostsByCategoryId',$category->id)}}">
                                             <svg class="c-icon">
                                                 <use xlink:href="{{asset('vendors/@coreui/icons/svg/free.svg#cil-magnifying-glass')}}"></use>
-                                            </svg></a><a class="btn btn-info" href="{{route('customer.edit',['id'=>$user->id])}}">
+                                            </svg></a><a class="btn btn-info" href="#">
                                             <svg class="c-icon">
                                                 <use xlink:href="{{asset('vendors/@coreui/icons/svg/free.svg#cil-description')}}"></use>
-                                            </svg></a><a class="btn btn-danger" class="text-danger" onclick="return confirm('Bạn chắc chắn muốn xóa?')"  href="{{route('customer.delete',['id'=>$user->id])}}">
+                                            </svg></a><a class="btn btn-danger" class="text-danger" onclick="return confirm('Bạn chắc chắn muốn xóa?')"  href="#">
                                             <svg class="c-icon">
                                                 <use xlink:href="{{asset('vendors/@coreui/icons/svg/free.svg#cil-trash')}}"></use>
                                             </svg></a></td>

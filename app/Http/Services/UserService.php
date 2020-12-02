@@ -19,8 +19,8 @@ class UserService{
         $user-> email= $request->email;
         $user->password = Hash::make($request->password);
         $user->status = 2;
-        $user->role = 1;
-        $this->userRepository->save($user);
+
+        $this->userRepository->save($user, $request->roles);
     }
     public function getAll(){
         return $this->userRepository->getAll();
@@ -40,4 +40,11 @@ class UserService{
         return $user->delete();
     }
 
+    public function search($request ){
+        $query = $request->search;
+       return $this->userRepository->search($query);
+
+
+
+    }
 }

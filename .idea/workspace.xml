@@ -2,27 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c03f317c-4056-485f-aa0e-dfc6cd8b6d6d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/modules/customer/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/task_manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/task_manager.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/modules/category/listPostsByCategoryId.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/modules/customer/search.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Repositories/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Repositories/UserRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Services/UserService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Services/UserService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/modules/core/menu_left.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/modules/core/menu_left.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/modules/customer/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/modules/customer/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/modules/customer/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/modules/customer/dashboard.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/modules/customer/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/modules/customer/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/modules/customer/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/modules/customer/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/modules/login.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/modules/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/modules/master.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -157,7 +147,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/modules/customer" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/modules/category" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -169,6 +159,8 @@
       <recent name="$PROJECT_DIR$/resources/views/modules" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/modules/category" />
+      <recent name="$PROJECT_DIR$/resources/views/modules" />
       <recent name="$PROJECT_DIR$/resources/views/modules/customer" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
@@ -199,6 +191,9 @@
       <workItem from="1606711770565" duration="1845000" />
       <workItem from="1606718252557" duration="9049000" />
       <workItem from="1606789228034" duration="17725000" />
+      <workItem from="1606871538206" duration="3830000" />
+      <workItem from="1606884006933" duration="4841000" />
+      <workItem from="1606893091458" duration="9847000" />
     </task>
     <servers />
   </component>

@@ -20,11 +20,6 @@
                         </div>
                         <div class="card-body">
                             <table class="table table-striped table-bordered datatable">
-                                @if (Session::has('success'))
-                                    <p class="text-success">
-                                        <i class="fa fa-check" aria-hidden="true"></i>{{ Session::get('success') }}
-                                    </p>
-                                @endif
                                 <thead>
                                 <tr>
                                     <th>No</th>
@@ -35,10 +30,10 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                @if(count($users) ==0)
+                                @if(count($result) ==0)
                                     <td colspan="5">No data to show</td>
                                 @else
-                                    @foreach($users as $key=> $user)
+                                    @foreach($result as $key=> $user)
                                 <tr>
                                     <td>{{++$key}}</td>
                                     <td>{{$user->name}}</td>
