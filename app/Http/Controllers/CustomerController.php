@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Services\UserService;
 use App\Models\User;
-use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Session;
+
 
 class CustomerController extends Controller
 {
@@ -33,9 +34,13 @@ class CustomerController extends Controller
 
     }
 
-    public function update()
+    public function update($id, Request $request)
     {
-        //
+        $user = $this->userService->findById($id);
+        $this->userService->update($user,$request);
+        Session::flash('success', 'Cập nhật khách hàng thành công');
+        return redirect()->route('customer.index');
+
 
     }
 
@@ -48,13 +53,17 @@ class CustomerController extends Controller
 
     public function edit($id)
     {
-        echo 'id khach hang la '.$id;
+        $user = $this->userService->findById($id);
+
+        return view('modules.customer.edit',compact('user'));
 
     }
 
-    public function delete()
+    public function delete($id)
     {
-        //
+        $user=$this->userService->findById($id);
+        $this->userService->delete($user);
+        return redirect()->route('customer.index');
 
     }
 }

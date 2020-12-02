@@ -17,5 +17,10 @@ class UserRepository{
     public function getAll(){
      return  $this->userModel->all();
     }
+    public function findById($id)
+    {
+        return $this->userModel->findOrFail($id);
+    }
+
 
 }

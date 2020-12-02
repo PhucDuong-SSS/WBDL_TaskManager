@@ -5,11 +5,16 @@
             <div class="container-fluid">
                 <div class="fade-in">
                     <div class="card">
-                        <div class="card-header"> DataTables
+                        <div class="card-header"> <strong>Customer List</strong>
                             <div class="card-header-actions"><a class="card-header-action" href="https://datatables.net" target="_blank"><small class="text-muted">docs</small></a></div>
                         </div>
                         <div class="card-body">
                             <table class="table table-striped table-bordered datatable">
+                                @if (Session::has('success'))
+                                    <p class="text-success">
+                                        <i class="fa fa-check" aria-hidden="true"></i>{{ Session::get('success') }}
+                                    </p>
+                                @endif
                                 <thead>
                                 <tr>
                                     <th>No</th>
@@ -32,10 +37,10 @@
                                     <td><a class="btn btn-success" href="#">
                                             <svg class="c-icon">
                                                 <use xlink:href="{{asset('vendors/@coreui/icons/svg/free.svg#cil-magnifying-glass')}}"></use>
-                                            </svg></a><a class="btn btn-info" href="#">
+                                            </svg></a><a class="btn btn-info" href="{{route('customer.edit',['id'=>$user->id])}}">
                                             <svg class="c-icon">
                                                 <use xlink:href="{{asset('vendors/@coreui/icons/svg/free.svg#cil-description')}}"></use>
-                                            </svg></a><a class="btn btn-danger" href="#">
+                                            </svg></a><a class="btn btn-danger" class="text-danger" onclick="return confirm('Bạn chắc chắn muốn xóa?')"  href="{{route('customer.delete',['id'=>$user->id])}}">
                                             <svg class="c-icon">
                                                 <use xlink:href="{{asset('vendors/@coreui/icons/svg/free.svg#cil-trash')}}"></use>
                                             </svg></a></td>

@@ -16,6 +16,7 @@ class UserService{
         $user = new User();
         $user->username = $request->username;
         $user->name = $request->name;
+        $user-> email= $request->email;
         $user->password = Hash::make($request->password);
         $user->status = 2;
         $user->role = 1;
@@ -23,6 +24,20 @@ class UserService{
     }
     public function getAll(){
         return $this->userRepository->getAll();
+    }
+    public function update($user, $request)
+    {
+        $user->name =$request->name;
+        $user->username =$request->username;
+        $user->email = $request->email;
+        $this->userRepository->save($user);
+
+    }
+    public function findById($id){
+        return $this->userRepository->findById($id);
+    }
+    public function delete($user){
+        return $user->delete();
     }
 
 }

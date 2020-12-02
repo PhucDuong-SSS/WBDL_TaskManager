@@ -1,29 +1,74 @@
-<!doctype html>
+
+<!DOCTYPE html>
+<!--
+* CoreUI Pro based Bootstrap Admin Template
+* @version v3.2.0
+* @link https://coreui.io/pro/
+* Copyright (c) 2020 creativeLabs Łukasz Holeczek
+* License (https://coreui.io/pro/license)
+-->
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login</title>
+    <base href="./">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+    <meta name="author" content="Łukasz Holeczek">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+    <title>CoreUI Pro Bootstrap Admin Template</title>
+    <!-- Main styles for this application-->
+    <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="c-app flex-row align-items-center">
 <div class="container">
-<div class="col-12 col-md-12">
-    <form action="{{route('login')}}" method="post">
-        @csrf
-        <div class="form-group">
-            <label for="exampleInputEmail1">User Name</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" name="username" aria-describedby="emailHelp" placeholder="Enter email">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card-group">
+                <div class="card p-4">
+                    <form action="{{route('login')}}" method="post">
+                        @csrf
+                    <div class="card-body">
+                        <h1>Login</h1>
+                        <p class="text-muted">Sign In to your account</p>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend"><span class="input-group-text">
+                      <svg class="c-icon">
+                        <use xlink:href="{{asset('vendors/@coreui/icons/svg/free.svg#cil-user')}}"></use>
+                      </svg></span></div>
+                            <input name="username" class="form-control" type="text" placeholder="Username">
+                        </div>
+                        <div class="input-group mb-4">
+                            <div class="input-group-prepend"><span class="input-group-text">
+                      <svg class="c-icon">
+                        <use xlink:href="{{asset('vendors/@coreui/icons/svg/free.svg#cil-lock-locked')}}"></use>
+                      </svg></span></div>
+                            <input class="form-control" name="password" type="password" placeholder="Password">
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <button class="btn btn-primary px-4" type="submit">Login</button>
+                            </div>
+
+                    </div>
+                </div>
+                    </form>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+    </div>
 </div>
-</div>
+<!-- CoreUI and necessary plugins-->
+<script src="vendors/@coreui/coreui-pro/js/coreui.bundle.min.js"></script>
+<!--[if IE]><!-->
+<script src="vendors/@coreui/icons/js/svgxuse.min.js"></script>
+<!--<![endif]-->
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        setTimeout(function() {
+            document.body.classList.remove('c-no-layout-transition')
+        }, 2000);
+    });
+</script>
+
 </body>
 </html>
-{{$hash}}
