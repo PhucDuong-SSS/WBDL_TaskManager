@@ -30,7 +30,9 @@
                                     <th>No</th>
                                     <th>Name</th>
                                     <th>User Name</th>
+                                    <th>Role</th>
                                     <th>Status</th>
+                                    <th>Image</th>
                                     <th>Actions</th>
                                 </tr>
                                 </thead>
@@ -43,7 +45,13 @@
                                     <td>{{++$key}}</td>
                                     <td>{{$user->name}}</td>
                                     <td>{{$user->username}}</td>
+                                    <td>
+                                        @foreach($user->roles as $role)
+                                            {{ $role->name . ', '  }}
+                                        @endforeach
+                                    </td>
                                     <td><span class="badge {{$user->status ==\App\Http\Controllers\StatusConst::ACTIVE?'badge-success':'badge-dark'}}">{{$user->status ==\App\Http\Controllers\StatusConst::ACTIVE?'Active':'Inactive'}}</span></td>
+                                    <td><img width="50" src="{{ asset('storage/'.$user->image) }}" alt=""></td>
                                     <td><a class="btn btn-success" href="#">
                                             <svg class="c-icon">
                                                 <use xlink:href="{{asset('vendors/@coreui/icons/svg/free.svg#cil-magnifying-glass')}}"></use>

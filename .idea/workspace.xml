@@ -2,17 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c03f317c-4056-485f-aa0e-dfc6cd8b6d6d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/modules/category/listPostsByCategoryId.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/modules/customer/search.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/toastr.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Repositories/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Repositories/UserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Services/UserService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Services/UserService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/modules/customer/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/modules/customer/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/modules/customer/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/modules/customer/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/modules/customer/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/modules/customer/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/modules/customer/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/modules/customer/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/modules/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/modules/master.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -147,9 +146,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/modules/category" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../OpenSIS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="Laravel.SettingsForm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -193,7 +192,12 @@
       <workItem from="1606789228034" duration="17725000" />
       <workItem from="1606871538206" duration="3830000" />
       <workItem from="1606884006933" duration="4841000" />
-      <workItem from="1606893091458" duration="9847000" />
+      <workItem from="1606893091458" duration="10523000" />
+      <workItem from="1606957541619" duration="18927000" />
+      <workItem from="1607043715490" duration="9053000" />
+      <workItem from="1607069790004" duration="18000" />
+      <workItem from="1607654283678" duration="5600000" />
+      <workItem from="1607670566082" duration="4025000" />
     </task>
     <servers />
   </component>
@@ -209,18 +213,18 @@
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="452" y="155" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1294.741@72.27.1294.741" timestamp="1606813963691" />
-    <state x="502" y="155" width="424" height="491" key="FileChooserDialogImpl" timestamp="1606702907195">
+    <state x="502" y="155" width="424" height="491" key="FileChooserDialogImpl" timestamp="1607681815452">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state x="502" y="155" width="424" height="491" key="FileChooserDialogImpl/72.27.1294.741@72.27.1294.741" timestamp="1606702907195" />
-    <state x="704" y="280" width="399" height="164" key="NewPhpFileDialog" timestamp="1606719800566">
+    <state x="502" y="155" width="424" height="491" key="FileChooserDialogImpl/72.27.1294.741@72.27.1294.741" timestamp="1607681815452" />
+    <state x="704" y="280" width="399" height="164" key="NewPhpFileDialog" timestamp="1607654695384">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state x="704" y="280" width="399" height="164" key="NewPhpFileDialog/72.27.1294.741@72.27.1294.741" timestamp="1606719800566" />
-    <state x="208" y="31" width="1022" height="737" key="SettingsEditor" timestamp="1606632711364">
+    <state x="704" y="280" width="399" height="164" key="NewPhpFileDialog/72.27.1294.741@72.27.1294.741" timestamp="1607654695384" />
+    <state x="208" y="31" width="1022" height="737" key="SettingsEditor" timestamp="1607656128272">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state x="208" y="31" width="1022" height="737" key="SettingsEditor/72.27.1294.741@72.27.1294.741" timestamp="1606632711364" />
+    <state x="208" y="31" width="1022" height="737" key="SettingsEditor/72.27.1294.741@72.27.1294.741" timestamp="1607656128272" />
     <state x="498" y="310" width="441" height="181" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606634832039">
       <screen x="72" y="27" width="1294" height="741" />
     </state>

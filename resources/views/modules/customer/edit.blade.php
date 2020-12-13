@@ -9,7 +9,7 @@
                             <div class="card">
                                 <div class="card-header"><strong>Insert New Customerr</strong></div>
                                 <div class="card-body">
-                                    <form class="form-horizontal" action="{{route('customer.update',['id'=>$user->id])}}" method="post">
+                                    <form class="form-horizontal" action="{{route('customer.update',['id'=>$user->id])}}" method="post" enctype="multipart/form-data">
                                         @csrf
                                         <div class="form-group row">
                                             <label class="col-md-3 col-form-label" for="hf-name">Name</label>
@@ -28,6 +28,40 @@
                                             <div class="col-md-9">
                                                 <input class="form-control" id="hf-email" type="text" value="{{$user->email}}" name="email" placeholder="Enter your email" >
                                             </div>
+                                        </div><div class="form-group row">
+                                            <div class="col-md-9">
+                                                <img width="100" src="{{ asset('storage/'.$user->image) }}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-md-3 col-form-label" for="hf-password">Image Change</label>
+                                            <div class="col-md-9">
+                                                <input class="form-control" id="hf-password" type="file" name="image">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Role</label>
+                                            @foreach($roles as $role)
+                                                <div class="form-check">
+
+
+                                                    <input id="{{$role->id}}" name="roles[{{ $role->id }}]" class="form-check-input" type="checkbox" value="{{ $role->id }}"
+                                                           @foreach($role_id as $user_role)
+                                                           @if($user_role->id == $role->id)
+                                                           checked
+                                                    @endif
+                                                    @endforeach
+                                                    >
+
+
+                                                            <label for="{{$role->id}}" class="form-check-label">
+                                                                {{ $role->name }}
+                                                            </label>
+
+
+
+                                                </div>
+                                            @endforeach
                                         </div>
 
 

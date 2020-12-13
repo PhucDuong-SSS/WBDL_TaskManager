@@ -1,12 +1,13 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Http\Requests\CustomerResquest;
 use Illuminate\Http\Request;
 use App\Http\Services\UserService;
 use App\Models\User;
-use Illuminate\Support\Facades\Session;
 use App\Models\Role;
-
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Session;
 
 class CustomerController extends Controller
 {
@@ -46,18 +47,20 @@ class CustomerController extends Controller
 
     }
 
-    public function store(Request $request)
+    public function store(CustomerResquest $request)
     {
         $this->userService->create($request);
+        Session::flash('success', 'Thêm khách hàng thành công');
         return redirect()->route('customer.index');
 
     }
 
     public function edit($id)
-    {
+    {    $roles = Role::all();
         $user = $this->userService->findById($id);
+        $role_id = User::find($id)->Roles()->get();
 
-        return view('modules.customer.edit',compact('user'));
+        return view('modules.customer.edit',compact(['user','role_id','roles']));
 
     }
 
@@ -71,5 +74,12 @@ class CustomerController extends Controller
     public function search(Request $request){
         $result = $this->userService->search($request);
         return view('modules.customer.search',compact('result'));
+    }
+
+    public function setLanguage(Request $request)
+    {
+        $locale = $request->language;
+        session()->put('locale',$locale);
+        return back();
     }
 }

@@ -18,6 +18,8 @@
     <title>CoreUI Pro Bootstrap Admin Template</title>
     <!-- Main styles for this application-->
     <link href="{{asset('css/style.css')}}" rel="stylesheet">
+    <link href="{{asset('css/toastr.min.css')}}" rel="stylesheet">
+
     <link href="{{asset('vendors/@coreui/chartjs/css/coreui-chartjs.css')}}" rel="stylesheet">
     <link href="{{asset('vendors/datatables.net-bs4/css/dataTables.bootstrap4.css')}}" rel="stylesheet">
 </head>
@@ -225,9 +227,20 @@
             </svg>
         </button>
         <ul class="c-header-nav d-md-down-none">
-            <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="{{route('customer.index')}}">Dashboard</a></li>
+            <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="{{route('customer.index')}}">@lang('messages.dashboard')</a></li>
             <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="#">Users</a></li>
             <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="#">Settings</a></li>
+            <li class="c-header-nav-item px-3">
+                <form action="{{route('language')}}" method="post">
+                    @csrf
+                    <select id="language" name="language" onchange="this.form.submit()">
+                        <option value="vi" {{\Illuminate\Support\Facades\App::getLocale() =='vi'?'selected':''}}>VI</option>
+                        <option value="en" {{\Illuminate\Support\Facades\App::getLocale() =='en'?'selected':''}}>EN</option>
+                    </select>
+                </form>
+
+            </li>
+
         </ul>
         <ul class="c-header-nav mfs-auto">
             <li class="c-header-nav-item px-3 c-d-legacy-none">
@@ -426,6 +439,8 @@
 <script src="{{asset('vendors/datatables.net/js/jquery.dataTables.js')}}"></script>
 <script src="{{asset('vendors/datatables.net-bs4/js/dataTables.bootstrap4.min.js')}}"></script>
 <script src="{{asset('js/datatables.js')}}"></script>
+<script src="{{asset('js/toasts.js')}}"></script>
+<script src="{{asset('js/toastr.js')}}"></script>
 
 <script>
     document.addEventListener("DOMContentLoaded", function(event) {
@@ -434,6 +449,12 @@
         }, 2000);
     });
 </script>
+<script>
+    @if(\Illuminate\Support\Facades\Session::has('success'))
+        toastr.success("{{\Illuminate\Support\Facades\Session::get('success')}}")
+        @endif
 
+
+</script>
 </body>
 </html>

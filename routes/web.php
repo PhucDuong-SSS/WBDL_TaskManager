@@ -26,7 +26,7 @@ Route::post('login',[AuthController::class, 'login'])->name('auth.login');
 Route::get('logout',[AuthController::class, 'logout'])->name('auth.logout');
 
 
- Route::middleware(['auth','checkActiveAccount'])->prefix('customer')->group(function (){
+ Route::middleware(['auth','checkActiveAccount','checkLanguage'])->prefix('customer')->group(function (){
     Route::get('/',[CustomerController::class, 'index'])->name('customer.index');
     Route::get('/create', [CustomerController::class, 'create'])->name('customer.create');
 
@@ -37,6 +37,8 @@ Route::get('logout',[AuthController::class, 'logout'])->name('auth.logout');
     Route::post('{id}/update',[CustomerController::class, 'update'])->name('customer.update');
     Route::get('{id}/delete', [CustomerController::class , 'delete'])->name('customer.delete');
     Route::post('search', [CustomerController::class , 'search'])->name('customer.search');
+
+    Route::post('language', [CustomerController::class, 'setLanguage'])->name('language');
 
 });
 Route::middleware(['auth','checkActiveAccount'])->prefix('category')->group(function(){

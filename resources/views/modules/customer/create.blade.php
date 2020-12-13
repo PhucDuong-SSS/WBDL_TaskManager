@@ -9,25 +9,34 @@
                             <div class="card">
                                 <div class="card-header"><strong>Insert New Customerr</strong></div>
                                 <div class="card-body">
-                                    <form class="form-horizontal" action="{{route('customer.store')}}" method="post">
+                                    <form class="form-horizontal" action="{{route('customer.store')}}" method="post" enctype="multipart/form-data">
                                         @csrf
                                         <div class="form-group row">
                                             <label class="col-md-3 col-form-label" for="hf-name">Name</label>
                                             <div class="col-md-9">
-                                                <input class="form-control" id="hf-name" type="text" name="name" placeholder="Enter your name" autocomplete="email">
+                                                <input class="form-control @error('name') is-invalid @enderror " id="hf-name" type="text" value="{{old('name')}}" name="name" placeholder="Enter your name" autocomplete="email">
+                                                @error('name')
+                                                <div class="alert ">{{ $message }}</div>
+                                                @enderror
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-md-3 col-form-label" for="hf-username">User Name</label>
                                             <div class="col-md-9">
-                                                <input class="form-control" id="hf-username" type="text" name="username" placeholder="Enter your username" >
+                                                <input class="form-control @error('username') is-invalid @enderror "  id="hf-username" type="text" value="{{old('username')}}" name="username" placeholder="Enter your username" >
                                             </div>
+                                            @error('username')
+                                            <div class="alert ">{{ $message }}</div>
+                                            @enderror
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-md-3 col-form-label" for="hf-email">Email</label>
                                             <div class="col-md-9">
-                                                <input class="form-control" id="hf-email" type="text" name="email" placeholder="Enter your email" >
+                                                <input class="form-control @error('email') is-invalid @enderror" value="{{old('email')}}"  id="hf-email" type="text" name="email" placeholder="Enter your email" >
                                             </div>
+                                            @error('email')
+                                            <div class="alert ">{{ $message }}</div>
+                                            @enderror
                                         </div>
                                         <div class="form-group">
                                             <label>Role</label>
@@ -47,6 +56,13 @@
                                                 <input class="form-control" id="hf-password" type="password" name="password" placeholder="Enter Password.." autocomplete="current-password">
                                             </div>
                                         </div>
+                                        <div class="form-group row">
+                                            <label class="col-md-3 col-form-label" for="hf-password">Image</label>
+                                            <div class="col-md-9">
+                                                <input class="form-control" id="hf-password" type="file" name="image">
+                                            </div>
+                                        </div>
+
                                         <div class="card-footer">
                                             <button class="btn btn-sm btn-primary" type="submit"> Submit</button>
                                             <a href="{{route('customer.index')}}"><button class="btn btn-sm btn-primary" type="button"> Back</button></a>
